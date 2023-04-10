@@ -107,25 +107,27 @@ return (
         </Grid>
         <Divider color="#0495b2" sx={{ borderBottomWidth: 15 }}></Divider>
 
-        <Box sx={{flexGrow: 1, marginTop: '20px', marginBottom: '20px'}}>
-            <Grid container spacing={4} 
-                  justifyContent="center"
-                >
-              {nineCards.map((obj) => (
-                  <ListApartmentComponent
-                    key={obj.name}    
-                    name={obj.name} 
-                    handleOnClick={navApartmentPage}
-                    backgroundImage={obj.img_link}
-                  />
-              ))}
-
+        <Box sx={{marginTop: '20px', marginBottom: '20px'}}>
+          <Grid container spacing={2}>
+            <Grid item xs={false} sm={1}/>
+            <Grid item xs={12} sm={10}>
+              <Grid container spacing={3}>
+                  {nineCards.map((obj) => (
+                      <ListApartmentComponent
+                        key={obj.name}    
+                        name={obj.name}  
+                        handleOnClick={navApartmentPage}
+                        backgroundImage={obj.img_link} 
+                      />
+                    ))}
+              </Grid>
             </Grid>
-          </Box>
+            <Grid item xs={false} sm={1}/>
+            </Grid>
+        </Box>
       <Grid justifyContent={'center'} display='flex' marginBottom='5rem' marginTop='2rem' item>
           <Link href='/allapartments' color={'#0495B2'}>View All Apartments</Link>
       </Grid>
-
   </LayoutComponent>
 
 );
