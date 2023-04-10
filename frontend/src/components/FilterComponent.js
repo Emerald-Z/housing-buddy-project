@@ -67,9 +67,9 @@ export default function FilterComponent({apartment, collection, setOrder}) {
           return response.json();
         })
         .then((response) => {
-            if (window.localStorage.getItem(`_${storageName}_${filter}`) === null) {
+            //if (window.localStorage.getItem(`_${storageName}_${filter}`) === null) {
               window.localStorage.setItem(`_${storageName}_${filter}`, JSON.stringify(response));
-            }
+            //}
           })
         .catch((e) => {
           console.log(e);

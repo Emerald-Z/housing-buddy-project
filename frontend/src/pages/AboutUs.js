@@ -44,7 +44,7 @@ return (
                 flexDirection='column' item>
                   <Typography variant="h4" fontWeight={'bold'} color={'#0495b2'} align='center'>About Us</Typography>
                   <Typography color={'#0495b2'} variant="body1" paragraph={true} sx={{margin: 10, marginLeft: "10%"}}>
-                  Housing Buddy is one stop solution for helping UT students find accessible West Campus housing that meets their needs. As housing becomes more expensive and the timeframe of being able to secure top quality housing shrinks from year to year, students needed a place to be able to quickly compare the pros and cons of each apartment choice to make a final decision effectively and quickly. Thus, Housing Buddy serves to be a place where students can review apartment buildings that they've stayed in and learn more about their prospective homes for the future.
+                  Housing Buddy is a one stop solution for helping UT students find accessible West Campus housing that meets their needs. As housing becomes more expensive and the timeframe of being able to secure top quality housing shrinks from year to year, students needed a place to be able to quickly compare the pros and cons of each apartment choice to make a final decision effectively and quickly. Thus, Housing Buddy serves to be a place where students can review apartment buildings that they've stayed in and learn more about their prospective homes for the future.
                   </Typography>
                   <Button variant="contained" href="mailto:housingbuddy@gmail.com" style={{backgroundColor: '#0495B2', fontWeight:'bold', fontFamily:'sans-serif', height: 60, width: "70%", marginLeft: "15%"}} color="primary">Contact Us</Button>
 

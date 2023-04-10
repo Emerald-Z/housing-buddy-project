@@ -84,8 +84,9 @@ export default function SortComponent({apartment, setOrder}) {
   };
 
   async function filterTags(tags) {
+    console.log(tags)
     if (tags === undefined || tags === "[]" || tags.length === 0) {
-        return;
+        tags = ['cleanliness', 'amenities', 'parking', 'spaciousness', 'rating', 'management'];
     }
     const stringTag = JSON.stringify(tags);
     const apiCall = `https://${process.env.REACT_APP_HOSTNAME}/review/${apartment}/tags/${stringTag}`;

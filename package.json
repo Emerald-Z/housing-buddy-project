@@ -2,10 +2,11 @@
   "dependencies": {
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
-    "@mui/icons-material": "^5.11.11",
-    "@mui/material": "^5.11.14",
+    "@mui/icons-material": "^5.11.16",
+    "@mui/material": "^5.11.16",
     "@react-google-maps/api": "^2.18.1",
     "react": "^18.2.0",
+    "react-infinite-scroll-component": "^6.1.0",
     "styled-components": "^5.3.9"
   }
 }

@@ -21,7 +21,7 @@ users.post('/', async (req, res) => {
       const user = req.body.user;
       const users = await db.collection('users');
   
-      const new_user = { name: user.name, email: user.email, id: user.user_id, review: "" };
+      const new_user = { name: user.name, email: user.email, id: user.user_id, review: "", apartment: "" };
 
       const user_exists = (await users.doc(user.user_id).get()).exists;
 
